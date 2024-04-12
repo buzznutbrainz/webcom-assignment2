@@ -6,11 +6,14 @@
     <title>Pent 99</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header>
+        <h1>pent99</h1>
+        <p>Live Brighter</p>
         <img src="pent99logo.png" alt="pent99 logo consisting of two 9's making a set of glasses" class="center">
         <nav>
             <ul>
@@ -22,66 +25,39 @@
         </nav>
     </header>
 
-    <section id="home">
-        <h1>Pent 99</h1>
-        <p>Live Brighter.</p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/I55JHFNj9gs?si=k8usGtlY8LU-ewS4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </section>
+    <section id="about" class="section">
+        <h1>Innovating How You See (Through) Eyewear.</h1>
+        <p>Focusing on quality and creativity, we stand out by offering unique designs that embody our values of sustainability and individual expression.</p>
     </section>
+
+    <section id="home" class="section">
+        <div class="video-wrapper">
+            <h2>Explore The Vision.</h2>
+            <iframe src="https://www.youtube.com/embed/I55JHFNj9gs?si=k8usGtlY8LU-ewS4" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+
     
-    <section id="products">
+<section id="products" class="section">
     <h2>Our Products</h2>
     <div class="card-container">
-        <div class="card">
-            <img src="assets/invertsorted/a.png" alt="Description of Product 1">
-            <h3>Product 1</h3>
-            <p>Description of Product 1.</p>
-        </div>
-        <div class="card">
-            <img src="assets/invertsorted/e.png" alt="Description of Product 2">
-            <h3>Product 2</h3>
-            <p>Description of Product 2.</p>
-        </div>
-        <div class="card">
-            <img src="assets/invertsorted/d.png" alt="Description of Product 3">
-            <h3>Product 3</h3>
-            <p>Description of Product 3.</p>
-        </div>
     </div>
 </section>
-
     
-    <section id="about">
-        <h2>About Us</h2>
-        <p>A unique way to style your face.</p>
+
+    <section class="accordion section">
+        <h3>FAQ:</h3>
+        <div class="accordion-item">
+            <div class="accordion-heading">Do our sunglasses have blue light protection?</div>
+            <div class="accordion-content">
+                <p>Currently, our sunglasses do not include blue light protection. This is due to our focus on outdoor eyewear, however, we are exploring options for future products.</p>
+            </div>
+        </div>
     </section>
 
-<section class="accordion">
-    <h3>FAQ:</h3>
-  <div class="accordion">
-    <div class="accordion-item">
-      <div class="accordion-heading">Do our sunglasses have blue light protection?</div>
-      <div class="accordion-content">
-        <p>No.</p>
-      </div>
-    </div>
-    <div class="accordion-item">
-      <div class="accordion-heading">Do our sunglasses have UV protection?</div>
-      <div class="accordion-content">
-        <p>Yes.</p>
-      </div>
-    </div>
-    <div class="accordion-item">
-      <div class="accordion-heading">Do we love our fans?</div>
-      <div class="accordion-content">
-        <p>Absolutely.</p>
-      </div>
-    </div>
-  </div>
-
-    <section id="contact">
+    <section id="contact" class="section">
         <h2>Contact Us</h2>
-        <form>
+        <form class="contact-form">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name">
             <label for="email">Email:</label>
@@ -94,11 +70,9 @@
 
     <script src="script.js"></script>
 
-
-<footer>
-    <p>© 2024 pent99 Ava Ehtesham-Heravi</p>
-</footer>
-
+    <footer>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d115580.50204646641!2d55.106442465104685!3d25.139386211981208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x3e5f6a511ed4b287%3A0xe1a35f0efa60846c!2sJumeirah%20St%20-%20opp.%20Burj%20Al%20Arab%20-%20Umm%20Suqeim%20-%20Umm%20Suqeim%203%20-%20Dubai%20-%20United%20Arab%20Emirates!3m2!1d25.139409!2d55.188843999999996!5e0!3m2!1sen!2sca!4v1712891186194!5m2!1sen!2sca" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p>© 2024 pent99 Ava Ehtesham-Heravi</p>
+    </footer>
 </body>
-
 </html>

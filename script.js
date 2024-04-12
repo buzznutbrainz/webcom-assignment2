@@ -1,26 +1,30 @@
 // Product data
 const products = [
-    { id: 1, name: "Sun 1", description: "Dangly-Style Sunglasses", price: "$99" },
+    { id: 1, name: "Sun 1", description: "Style Sunglasses With Dangle Charms", price: "$99"},
     { id: 2, name: "MOO-ve", description: "Cow-Style Sunglasses", price: "$99" },
     { id: 3, name: "In Flames", description: "Flame-Style Sunglasses", price: "$99" },
 ]
 
-// Function to display products
 function displayProducts(productList) {
     const container = document.querySelector('.card-container');
-    container.innerHTML = ''; // Clear existing content
+    container.innerHTML = ''; 
 
     productList.forEach(product => {
         const card = document.createElement('div');
         card.className = 'card';
+        let imageName = product.name.toLowerCase().replace(/\s/g, '-'); 
         card.innerHTML = `
+            <img src="assets/dangle.png" alt="${product.name}" class="product-image">
             <h3>${product.name}</h3>
             <p>${product.description}</p>
             <p>${product.price}</p>
         `;
         container.appendChild(card);
     });
+
 }
+
+
 
 document.addEventListener('DOMContentLoaded', () => {
     // Get all accordion headings

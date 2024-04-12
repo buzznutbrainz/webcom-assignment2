@@ -10,22 +10,69 @@ body {
     background-attachment: fixed;
 }
 
+/* Base styles for the header to ensure content is centered */
 header {
-    background-color: #007bff;
-    color: rgb(255, 255, 255);
-    padding: 0px 0;
     text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
 }
 
+header h1 {
+    width: 100%;
+    font-size: 3em; /* Larger font size for prominence */
+    margin: 0; /* Remove default margin */
+    padding: 20px 0; /* Padding for better spacing */
+    background-color: #333; /* Dark background for contrast */
+    color: white; /* White color for the text */
+}
+
+.product-image {
+    width: 100%; /* Full width of the card */
+    max-width: 300px; /* Adjust maximum width as necessary */
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px auto; /* Centering the image */
+    display: block; /* Corrects any display issues */
+}
+
+/* Styling for the header image to ensure it's properly centered and responsive */
 header img {
     max-width: 100%;
-    height: auto; 
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+    position: center;/* This centers the image horizontally */
 }
+
+/* Styling for the header text container for better alignment and spacing */
+.header-text {
+    margin-top: 20px; /* Adjust this as needed based on the size of your header image and desired spacing */
+}
+
+
+/* Specific styling for the <h1> tag to ensure it matches your site's theme while being prominently displayed */
+.header-text h1 {
+    font-size: 2.5em; /* Example font size, adjust as needed */
+    color: #e22020; /* Adjust the color as needed to match your site's theme */
+    margin: 0 0 10px; /* Provides spacing between the h1 and the following paragraph */
+}
+
+/* Styling for the <p> tag to complement the <h1> and provide a cohesive look */
+.header-text p {
+    font-size: 1.2em; /* Example font size, adjust as needed */
+    color: #666; /* This is a lighter shade than the h1 for contrast, adjust as needed */
+    margin: 0; /* Ensures there's no additional space beyond what's specified */
+}
+
+/* Responsive adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+    .header-text h1 {
+        font-size: 2em; /* Slightly smaller font size for better readability on smaller screens */
+    }
+
+    .header-text p {
+        font-size: 1em; /* Adjusts the paragraph font size for smaller screens for consistency */
+    }
+}
+
+
 
 nav {
     width: 100%; 
@@ -64,18 +111,17 @@ nav ul li a {
     }
 
     nav ul {
-        flex-direction: column; /* Stack navigation items vertically on small screens */
+        flex-direction: column; 
     }
 }
 
+#about {
 
-header img {
-    display: block; /* Make the image a block-level element */
-    margin: 0 auto; /* Center the image horizontally */
-}
+    text-align: center; 
+    max-width: -50%;
+    padding: 20px;
+    padding-bottom: 40px;
 
-header img {
-    position: center;
 
 }
 
@@ -85,12 +131,28 @@ header img {
 }
 
 iframe {
-    width: 100%;
+    width: 70%;
+    position: center;
     height: 300px;
     border:#333;
+    border-radius: 22px;
   }  
 
 
+#products {
+    text-align: center; 
+    color: #ffffff;
+    padding: 20px; 
+    border-radius: 8px;
+}
+
+
+.product-image {
+max-width: 276px;
+max-height: 491px;
+border-radius: 15px;
+}
+  
 .card-container {
     display: grid;
     gap: 10px;
@@ -99,10 +161,11 @@ iframe {
 }
 
 .card {
-    background-color: white;
+    background-color: rgb(215, 13, 13);
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
     padding: 15px;
     box-sizing: border-box;
+    border-radius: 22px;
 }
 
 
@@ -129,30 +192,21 @@ iframe {
 }
 
 
-#products {
-        text-align: center; 
-        padding: 20px; 
-}
-
-#about {
-
-    text-align: center; 
-    padding: 20px; 
-
-}
 
 .accordion {
   position: center;
+  text-align: center;
   max-width: 600px;
   margin: 20px auto;
 }
 
+
 .accordion-content {
-    display: none; /* Hide content initially */
+    display: none; 
 }
 
 .accordion-content.active {
-    display: block; /* Show content when active */
+    display: block; 
 }
 
 .accordion-item {
@@ -174,10 +228,12 @@ iframe {
   display:flex;
 }
 
+
 #contact {
 
     text-align: center; 
     padding: 20px; 
+    flex-direction: column;
 
 }
 
@@ -187,11 +243,14 @@ iframe {
     }
 }
 
+
 footer {
-    background-color: #ffffff;
-    color: rgb(0, 0, 0);
+    background-color: #ea8f08;
+    color: rgb(255, 255, 255);
     text-align: center;
+    font-size: 0.6em;
     width: 100%;
-    padding: 10px 0;
+    padding-top: 22px;
+    padding-bottom: 7px;
     box-sizing: border-box;
 }
